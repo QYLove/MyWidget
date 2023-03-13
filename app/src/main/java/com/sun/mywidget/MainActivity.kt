@@ -1,11 +1,16 @@
 package com.sun.mywidget
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import com.sun.base.base.BaseActivity
+import com.sun.base.base.BaseProperties
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
+class MainActivity : BaseActivity() {
+
+    override val mProperties: BaseProperties
+        get() = BaseProperties(
+            layoutRes = R.layout.activity_main,
+            hasTitle = true, titleStr = "主页",
+            hasBack = true
+        )
+
+
 }

@@ -1,0 +1,68 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace 'com.sun.base'
+    compileSdk 32
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 32
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+        kapt{
+            arguments{
+                arg("AROUTER_MODULE_NAME", project.getName())
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    viewBinding {
+        enabled = true
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    api(libs.core.ktx)
+    api(libs.appcompat)
+    api(libs.constraintlayout)
+    api(libs.material)
+    api(libs.viewbinding)
+    api(libs.bundles.arouters)
+    api(libs.bundles.lifecycles)
+    api(libs.fragment.ktx)
+    api(libs.bundles.retofits)
+    api(libs.logging)
+    api(libs.bundles.coroutines)
+    api(libs.commons)
+    api(libs.commons.lang3)
+    api(libs.permissionx)
+    api(libs.statusbar)
+    api(libs.glide)
+    api(libs.smartrefresh)
+    api(libs.picker)
+    api(libs.matisse)
+    api(libs.tiny)
+}

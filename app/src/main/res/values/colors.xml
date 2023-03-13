@@ -7,4 +7,17 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_black">#000000</color>
+    <color name="bg_EF13FC">#EF13FC</color>
+    <color name="bg_6B38FD">#6B38FD</color>
+    <color name="bg_35D0E9">#35D0E9</color>
+    <color name="bg_5CA755">#5CA755</color>
+    <color name="bg_F7D172">#F7D172</color>
+    <color name="bg_D91F1B">#D91F1B</color>
+    <color name="bg_122042">#122042</color>
+    <color name="bg_11224D">#11224D</color>
+    <color name="bg_11275A">#11275A</color>
+
 </resources>

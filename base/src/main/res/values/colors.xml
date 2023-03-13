@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_99000000">#99000000</color>
+
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_black">#000000</color>
+
+    <color name="bg_0D1D43">#0D1D43</color>
+    <color name="bg_081432">#081432</color>
+    <color name="bg_647498">#647498</color>
+    <color name="bg_09183B">#09183B</color>
+    <color name="bg_6176AB">#6176AB</color>
+    <color name="bg_2885FF">#2885FF</color>
+    <color name="bg_f0f0f0">#f0f0f0</color>
+    <color name="bg_FD5B5B">#FD5B5B</color>
+    <color name="bg_006CFF">#006CFF</color>
+    <color name="bg_D68615">#D68615</color>
+    <color name="bg_D91F1B">#D91F1B</color>
+    <color name="bg_6B38FD">#6B38FD</color>
+    <color name="bg_F7D172">#F7D172</color>
+    <color name="bg_35D0E9">#35D0E9</color>
+    <color name="bg_5CA755">#5CA755</color>
+    <color name="bg_EF13FC">#EF13FC</color>
+    <color name="bg_26EACE">#26EACE</color>
+    <color name="bg_11275A">#11275A</color>
+    <color name="bg_11224D">#11224D</color>
+    <color name="bg_122042">#122042</color>
+    <color name="bg_ED9121">#ED9121</color>
+    <color name="bg_00FF7F">#00FF7F</color>
+    <color name="bg_A066D3">#A066D3</color>
+
+</resources>
