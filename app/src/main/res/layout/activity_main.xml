@@ -6,12 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.MainActivity">
 
-    <com.sun.mywidget.widget.Pie3DChartView
-        android:id="@+id/pie"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pie_btn"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_180"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="3D饼图"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dot_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="点指示器"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pie_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/test_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="测试"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dot_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

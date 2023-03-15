@@ -1,11 +1,14 @@
 package com.sun.mywidget.ui.main
 
+import android.content.Intent
 import androidx.activity.viewModels
 import com.sun.base.base.BaseActivity
 import com.sun.base.base.BaseProperties
+import com.sun.base.expand.setOnSingleClickListener
 import com.sun.mywidget.R
-import com.sun.mywidget.bean.DataBean
 import com.sun.mywidget.databinding.ActivityMainBinding
+import com.sun.mywidget.ui.dot.DotIndicatorActivity
+import com.sun.mywidget.ui.pie.Pie3DViewActivity
 
 class MainActivity : BaseActivity() {
 
@@ -16,7 +19,7 @@ class MainActivity : BaseActivity() {
             hasBack = true
         )
 
-    private val mViewBinding:ActivityMainBinding by lazy {
+    private val mViewBinding: ActivityMainBinding by lazy {
         ActivityMainBinding.bind(mViewParent)
     }
 
@@ -27,7 +30,7 @@ class MainActivity : BaseActivity() {
         closePage()
     }
 
-    private fun closePage(){
+    private fun closePage() {
         finish()
     }
 
@@ -36,11 +39,12 @@ class MainActivity : BaseActivity() {
         initView()
     }
 
-    private fun initView(){
-        val list = mutableListOf<DataBean>()
-        for (i in 0 until 6){
-            list.add(DataBean("数据$i",i*10))
+    private fun initView() {
+        mViewBinding.pieBtn.setOnSingleClickListener {
+            startActivity(Intent(this, Pie3DViewActivity::class.java))
         }
-        mViewBinding.pie.setData(list)
+        mViewBinding.dotBtn.setOnSingleClickListener {
+            startActivity(Intent(this, DotIndicatorActivity::class.java))
+        }
     }
 }
