@@ -7,11 +7,11 @@ plugins {
 
 android {
     namespace 'com.sun.base'
-    compileSdk 32
+    compileSdk COMPILE_SDK_VERSION as int
 
     defaultConfig {
-        minSdk 23
-        targetSdk 32
+        minSdk MIN_SDK_VERSION as int
+        targetSdk TARGET_SDK_VERSION as int
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -65,4 +65,5 @@ dependencies {
     api(libs.picker)
     api(libs.matisse)
     api(libs.tiny)
+    implementation(libs.util)
 }

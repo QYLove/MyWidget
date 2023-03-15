@@ -21,7 +21,7 @@ abstract class BaseActivity : AppCompatActivity() {
         ActivityBaseBinding.inflate(layoutInflater)
     }
 
-    internal val mViewParent: View by lazy {
+    protected val mViewParent: View by lazy {
         mViewBinding.viewStub.inflate()
     }
 

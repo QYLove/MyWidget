@@ -7,10 +7,10 @@ import android.graphics.Paint
 import android.graphics.RectF
 import android.util.AttributeSet
 import android.view.View
+import com.sun.base.expand.logD
 import com.sun.mywidget.R
 import com.sun.mywidget.bean.DataBean
 import com.sun.mywidget.bean.PieBean
-import com.sun.mywidget.expand.logD
 import kotlin.math.cos
 import kotlin.math.sin
 
@@ -184,12 +184,12 @@ class Pie3DChartView : View {
 
     private fun getColor(name: String): Int {
         return when (name) {
-            "视频报警" -> context.getColor(R.color.bg_EF13FC)
-            "五类" -> context.getColor(R.color.bg_6B38FD)
-            "误报" -> context.getColor(R.color.bg_35D0E9)
-            "三类" -> context.getColor(R.color.bg_5CA755)
-            "四类" -> context.getColor(R.color.bg_F7D172)
-            "紧急报警" -> context.getColor(R.color.bg_D91F1B)
+            "数据0" -> context.getColor(R.color.bg_EF13FC)
+            "数据1" -> context.getColor(R.color.bg_6B38FD)
+            "数据2" -> context.getColor(R.color.bg_35D0E9)
+            "数据3" -> context.getColor(R.color.bg_5CA755)
+            "数据4" -> context.getColor(R.color.bg_F7D172)
+            "数据5" -> context.getColor(R.color.bg_D91F1B)
             else -> context.getColor(R.color.bg_white)
         }
     }
